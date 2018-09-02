@@ -1,0 +1,13 @@
+import { Router } from 'express'
+
+class {{name}} 
+    Router: () ->
+        router = Router()
+
+        router.get '/', (req, res) ->
+            res.send 'Hello World'
+
+        return router
+    }
+
+module.exports = router

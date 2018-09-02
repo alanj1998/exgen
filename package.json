@@ -1,0 +1,24 @@
+{
+  "name": "exgen",
+  "version": "1.0.0",
+  "description": "Exgen is a express code generator used for faster development of api's. Inspired by Angular CLI, it uses templated generating in order to speed up the daunting tasks of rewriting imports etc.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha "
+  },
+  "keywords": [
+    "CLI",
+    "Express",
+    "Typescript"
+  ],
+  "author": "Alan J",
+  "license": "ISC",
+  "dependencies": {
+    "figlet": "^1.2.0",
+    "fs-extra": "^7.0.0",
+    "mustache": "^2.3.2"
+  },
+  "bin": {
+    "exgen": "./index.js"
+  }
+}

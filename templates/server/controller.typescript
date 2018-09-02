@@ -1,0 +1,14 @@
+import { Router, Request, Response } from 'express'
+
+export class {{name}}{
+
+    public Router() : Router {
+        let router: Router = Router()
+
+        router.get('/', (req: Request, res: Response) => {
+            res.send('Hello World')
+        })
+
+        return router
+    }
+}

@@ -22,7 +22,10 @@ By using [Mustache](https://github.com/janl/mustache.js/) as a templating engine
 ```
 exgen { g | gen | generate } { c | controller } nameOfController
 ```
-This command ran in your project root, will generate a new controller of type typescript in ${projectRoot}/routes/controllers/nameOfController.controller.ts
+This command ran in your project root, will generate a new controller of type typescript in 
+```
+${projectRoot}/src/routes/controllers/nameOfController.controller.ts
+```
 
 There are two extra options available:
 1. --type { typescript | native | coffeescript } =>  allows you to generate a route in plain javascript or coffeescript

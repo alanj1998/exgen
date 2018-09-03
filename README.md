@@ -33,8 +33,12 @@ This command will take you through setting up exgen in your project.
 It will save its settings under ${projectPath}/.exgenconf
 
 #### 2. Usage
+
+- Generating Files
+
+1. Controllers
 ```
-exgen { g | gen | generate } { c | controller } nameOfController
+> exgen { g | gen | generate } { c | controller } nameOfController
 ```
 This command ran in your project root, will generate a new controller of type typescript in 
 ```
@@ -45,6 +49,11 @@ There are two extra options available:
 1. --type { typescript | native | coffeescript } =>  allows you to generate a route in plain javascript or coffeescript
 2. --path /path/to/file => allows you to override the MVC stack path to user chosen one
 
+- Editing config file
+```
+> exgen { e | edit } 
+```
+Used to edit exgen configuration. 
 
 ### How to help with the project?
 If you wish to contribute to the project create a pull request whenever you created some changes!

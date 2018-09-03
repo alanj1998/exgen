@@ -18,16 +18,21 @@ By using [Mustache](https://github.com/janl/mustache.js/) as a templating engine
 ```
 > git clone https://github.com/alanj1998/exgen
 ```
-2. Install npm modules
+2. Run bootstrap
 ```
-> npm install
-```
-3. NPM link this repo to use exgen globally 
-```
-> npm link (run inside repo)
+> sudo ./exgen.bootstrap.sh
 ```
 
 ### How to use?
+#### 1. Setup
+In order to use exgen in your project you need to initialise it:
+```
+> exgen init
+```
+This command will take you through setting up exgen in your project. 
+It will save its settings under ${projectPath}/.exgenconf
+
+#### 2. Usage
 ```
 exgen { g | gen | generate } { c | controller } nameOfController
 ```
@@ -44,4 +49,4 @@ There are two extra options available:
 ### How to help with the project?
 If you wish to contribute to the project create a pull request whenever you created some changes!
 
-#### Copyright Alanj1998
+#### Created by Alanj1998. License ISC

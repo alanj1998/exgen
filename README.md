@@ -14,9 +14,18 @@ Exgen is designed to save time by generating files such as route controllers and
 By using [Mustache](https://github.com/janl/mustache.js/) as a templating engine, the files get created instantly and put into MVC like stack for express
 
 ### How to install?
-1. Clone this repository = > git clone https://github.com/alanj1998/exgen
-2. Install npm modules = > npm install
-3. NPM link this repo to use exgen globally = > npm link (run inside repo)
+1. Clone this repository 
+```
+> git clone https://github.com/alanj1998/exgen
+```
+2. Install npm modules
+```
+> npm install
+```
+3. NPM link this repo to use exgen globally 
+```
+> npm link (run inside repo)
+```
 
 ### How to use?
 ```

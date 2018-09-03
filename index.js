@@ -5,6 +5,7 @@ const args = process.argv.slice(2)
 const init = require('./lib/init')
 const generate = require('./lib/generate')
 const exgenIntro = require('./lib/intro')
+const edit = require('./lib/confedit')
 
 if (fs.pathExistsSync(`${process.cwd()}/package.json`)) {
     exgenIntro.genArt()
@@ -18,6 +19,10 @@ if (fs.pathExistsSync(`${process.cwd()}/package.json`)) {
                 case 'generate':
                 case 'gen':
                     generate(args.slice(1))
+                    break
+                case 'edit':
+                case 'e':
+                    edit()
                     break
                 default:
                     console.log('\x1b[31m%s\x1b[0m', 'No arguments matched the program!')
